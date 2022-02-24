@@ -1,9 +1,8 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import image1 from '../../public/images/img-1.jpg';
 
-const Services: NextPage = () => {
+export default function Services(){
 	return (
 		<>
 			<Head>
@@ -60,5 +59,3 @@ const Services: NextPage = () => {
 		</>
 	);
 };
-
-export default Services;

@@ -1,10 +1,8 @@
-// @ts-nocheck
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import image1 from '../../public/images/img-1.jpg';
 
-const Products: NextPage = () => {
+export default function Products() {
 	return (
 		<>
 			<Head>
@@ -61,5 +59,3 @@ const Products: NextPage = () => {
 		</>
 	);
 };
-
-export default Products;

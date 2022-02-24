@@ -1,11 +1,10 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import SlickSlider from '../components/Slider';
 import image1 from '../../public/images/img-1.jpg';
 import image2 from '../../public/images/img-2.jpg';
 
-const Home: NextPage = () => {
+export default function Home() {
 	const slideFavoritesNext = () => {
 		favoritesRef.current.scrollLeft += favoritesRef.current.offsetWidth - 300;
 	};
@@ -118,5 +117,3 @@ const Home: NextPage = () => {
 		</>
 	);
 };
-
-export default Home;

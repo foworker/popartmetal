@@ -1,9 +1,8 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import image1 from '../../public/images/img-2.jpg';
 
-const Contact: NextPage = () => {
+export default function Contact() {
 	return (
 		<>
 			<Head>
@@ -60,5 +59,3 @@ const Contact: NextPage = () => {
 		</>
 	);
 };
-
-export default Contact;
