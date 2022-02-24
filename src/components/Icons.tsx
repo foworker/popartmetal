@@ -1,4 +1,3 @@
-// @ts-nocheck
 const Facebook = ({ size }) => {
 	return (
 		<svg

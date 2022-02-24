@@ -1,4 +1,3 @@
-// @ts-nocheck
 import Head from 'next/head';
 
 export function Title({ suffix, children }) {

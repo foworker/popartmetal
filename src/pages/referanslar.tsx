@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import image1 from '../../public/images/img-2.jpg';
 
-const Hakkimizda: NextPage = () => {
+const References: NextPage = () => {
 	return (
 		<>
 			<Head>
@@ -62,4 +62,4 @@ const Hakkimizda: NextPage = () => {
 	);
 };
 
-export default Hakkimizda;
+export default References;

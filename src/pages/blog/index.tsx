@@ -1,7 +1,6 @@
-// @ts-nocheck
 import type { NextPage } from 'next';
 import Head from 'next/head';
-const Hakkimizda: NextPage = () => {
+const Blog: NextPage = () => {
 	return (
 		<>
 			<Head>
@@ -53,4 +52,4 @@ const Hakkimizda: NextPage = () => {
 	);
 };
 
-export default Hakkimizda;
+export default Blog;

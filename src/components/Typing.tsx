@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import Typed from 'typed.js';
 const words = [

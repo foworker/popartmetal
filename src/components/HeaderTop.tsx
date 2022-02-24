@@ -1,4 +1,3 @@
-// @ts-nocheck
 import Link from 'next/link';
 import { ChevronDownIcon, ChevronDoubleRightIcon } from '@heroicons/react/outline';
 export default function HeaderTop() {

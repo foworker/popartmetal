@@ -1,4 +1,3 @@
-// @ts-nocheck
 import Link from 'next/link';
 import Router from 'next/router';
 import Logo from './Logo';
