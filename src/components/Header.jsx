@@ -3,7 +3,6 @@ import Router from 'next/router';
 import Logo from './Logo';
 import { SearchIcon } from '@heroicons/react/outline';
 import MainMenu from './MainMenu';
-import UserMenu from './UserMenu';
 import Typing from './Typing';
 import HeaderTop from './HeaderTop';
 
