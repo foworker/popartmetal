@@ -6,7 +6,7 @@ import '../css/style.css';
 
 import 'focus-visible';
 import { useState, useEffect, Fragment, Component } from 'react';
-import type { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
 import { Footer } from '../components/Footer';
 import { Title } from '../components/Title';
@@ -37,7 +37,7 @@ Router.events.on('routeChangeStart', () => progress.start());
 Router.events.on('routeChangeComplete', () => progress.finish());
 Router.events.on('routeChangeError', () => progress.finish());
 
-export default function App({ Component, pageProps, router }: AppProps) {
+export default function App({ Component, pageProps, router }) {
 	let [navIsOpen, setNavIsOpen] = useState(false);
 
 	useEffect(() => {
