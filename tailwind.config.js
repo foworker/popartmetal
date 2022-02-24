@@ -1,0 +1,62 @@
+module.exports = {
+	content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
+	theme: {
+		extend: {
+			zIndex: {
+				'-1': -1,
+				'-10': -10,
+				'-20': -20,
+			},
+			colors: {
+				navy: {
+					100: '#cfd1d4',
+					200: '#a0a3a9',
+					300: '#70747d',
+					400: '#414652',
+					500: '#111827',
+					600: '#0e131f',
+					700: '#0a0e17',
+					800: '#070a10',
+					900: '#030508',
+				},
+				softpink: {
+					100: '#fffafa',
+					200: '#fff5f5',
+					300: '#fff1f0',
+					400: '#ffeceb',
+					500: '#ffe7e6',
+					600: '#ccb9b8',
+					700: '#998b8a',
+					800: '#665c5c',
+					900: '#332e2e',
+				},
+				softblue: {
+					100: '#fafcff',
+					200: '#f5f9ff',
+					300: '#f0f5ff',
+					400: '#ebf2ff',
+					500: '#e6efff',
+					600: '#b8bfcc',
+					700: '#8a8f99',
+					800: '#5c6066',
+					900: '#2e3033',
+				},
+				softpurple: {
+					100: '#fbfaff',
+					200: '#f8f5ff',
+					300: '#f4f1ff',
+					400: '#f1ecff',
+					500: '#ede7ff',
+					600: '#beb9cc',
+					700: '#8e8b99',
+					800: '#5f5c66',
+					900: '#2f2e33',
+				},
+			},
+			fontFamily: {
+				sans: ['Montserrat', 'sans-serif'],
+			},
+		},
+	},
+	plugins: [require('@tailwindcss/typography')],
+};
