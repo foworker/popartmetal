@@ -5,9 +5,10 @@ import { Icon } from './Icons';
 
 export function Footer() {
 	return (
-		<footer className=" mt-10 bg-softpurple-300 pt-8 text-sm font-medium">
-			<div className="container mx-auto flex justify-between gap-6">
-				<div className="w-1/2">
+		<footer className="bg-gray-50 pt-8 text-sm font-medium relative">
+			<div className="absolute h-10 w-full bg-gradient-to-b from-slate-500/5 to-transparent top-0 "></div>
+			<div className="container mx-auto flex flex-col md:flex-row justify-between gap-x-6 px-4">
+				<div className="basis-1/2">
 					<Logo textColor="#333" />
 					<p className="mt-5">
 						PopArt, Metal ile sanatın buluştuğu noktada, sıradanlıktan hoşlanmayan, estetik ve
@@ -19,8 +20,8 @@ export function Footer() {
 						hizmet sunmaktadır.
 					</p>
 				</div>
-				<div className="w-1/4"></div>
-				<div className="w-1/4">
+				<div className="basis-1/3"></div>
+				<div className="basis-1/3">
 					<h5 className="mt-10 mb-3 border-b border-solid border-softpurple-500 text-base font-semibold uppercase">
 						Kurumsal Bilgiler
 					</h5>
@@ -47,7 +48,7 @@ export function Footer() {
 						</li>
 					</ul>
 				</div>
-				<div className="w-1/4">
+				<div className="basis-1/3">
 					<h5 className="mt-10 mb-3 border-b border-solid border-softpurple-500 text-base font-semibold uppercase">
 						İletişim Bilgilerimiz
 					</h5>
@@ -81,7 +82,7 @@ export function Footer() {
 				</div>
 			</div>
 			<div className="border-softpuple-400 container mx-auto mt-4 border-t border-solid pt-4">
-				<p className="text-center text-xs text-gray-500">
+				<p className="text-center text-[.6rem] sm:text-xs text-gray-500">
 					Copyright &copy; 2020-{new Date().getFullYear()} PopArt Metal. Tüm hakları saklıdır.
 				</p>
 			</div>

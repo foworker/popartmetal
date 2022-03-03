@@ -1,53 +1,69 @@
-import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';;
 
-export default function Blog(){
+import img1 from './images/metal-duvar-sanati-ev-dekorunda-neden-en-onemlidir.jpg';
+import img2 from './images/kucuk-mekanlar-icin-dekorasyon-fikirleri.jpg';
+import img3 from './images/oturma-odanizi-nasil-dekore-edersiniz.jpg';
+import img4 from './images/dunya-haritasi.jpg';
+import img5 from './images/gemotrik-cicekler.jpg';
+import img6 from './images/kadin-yuzu.jpg';
+import img7 from './images/kuslar.jpg';
+import img8 from './images/minimalist-kadin-yuzu.jpg';
+import img9 from './images/oklar.jpg';
+import img10 from './images/serotonin-molekul.jpg';
+import img11 from './images/soyut-kadin-ve-kus.jpg';
+import img12 from './images/soyut-yuz.jpg';
+import img13 from './images/soyut-yuzler.jpg';
+import img14 from './images/starry-night.jpg';
+import img15 from './images/yapraklar.jpg';
+
+const posts = [
+	{
+		id: 1,
+		name: 'Metal Duvar Sanatı Ev Dekorunda Neden En Önemlidir?',
+		image: img1,
+		href: "/metal-duvar-sanati-ev-dekorunda-neden-en-onemlidir",
+	},
+	{
+		id: 2,
+		name: 'Küçük Mekanlar İçin Dekorasyon Fikirleri',
+		image: img2,
+		href: "/kucuk-mekanlar-icin-dekorasyon-fikirleri",
+	},
+	{
+		id: 3,
+		name: 'Oturma Odanızı Nasıl Dekore Edersiniz?',
+		image: img3,
+		href: "/oturma-odanizi-nasil-dekore-edersiniz",
+	},
+];
+
+const meta = {
+	title: 'Bizden Haberler ve Mekanlarınız İçin Tasarım Tavsiyeleri',
+	description: 'Bizden Haberler ve Mekanlarınız İçin Tasarım Tavsiyeleri',
+}
+
+export default function Blogs() {
 	return (
-		<>
-			<Head>
-				<title>Blog</title>
-				<meta name="description" content="PopArt Metal Aksesuar Sanayi Ltd.Şti." />
-			</Head>
-			<section className="mb-6 mt-3 flex justify-between gap-10">
-				<p className="mb-5">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc urna turpis, blandit quis
-					convallis non, tempus eget dui. In at dui dictum, pulvinar nulla quis, consectetur sapien.
-					Vestibulum euismod purus nibh, sit amet hendrerit lectus eleifend eget. Curabitur nunc
-					magna, vehicula eu lectus at, vestibulum tristique augue. Aliquam viverra, quam eget
-					auctor auctor, diam urna iaculis augue, eget tincidunt augue elit vitae nulla. Vivamus
-					elit elit, molestie eget sodales id, congue in libero. Fusce nec tellus commodo, luctus
-					orci quis, congue nibh. Mauris sed volutpat nulla, vel luctus diam. Aliquam imperdiet quis
-					enim a vehicula. Morbi blandit luctus ex. Cras non tortor a mauris venenatis fermentum id
-					non tortor. Integer in imperdiet nibh.
-				</p>
-
-				<p className="mb-5">
-					In nec condimentum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-					Aenean semper, est sed porta gravida, libero mi vulputate eros, quis venenatis tortor urna
-					sed tellus. Proin consequat varius lacus, ut tincidunt mauris fermentum eget. Sed iaculis
-					commodo justo, sed ultricies nisl pretium a. Nullam semper est dignissim odio maximus, id
-					viverra quam maximus. Nam sed arcu sagittis, placerat metus sed, imperdiet metus. Morbi
-					cursus erat nunc, vel viverra lorem auctor quis. Vestibulum tincidunt odio in pulvinar
-					imperdiet. Etiam vel libero convallis, laoreet tellus nec, eleifend orci. Nam condimentum
-					lacus odio, vel porttitor metus mattis sed.
-				</p>
-
-				<p className="mb-5">
-					Aenean ultrices posuere erat non sagittis. Mauris quis elementum purus, non iaculis magna.
-					Pellentesque ultrices, eros eget volutpat dictum, ex lorem dignissim tortor, eu blandit
-					lectus orci eget dolor. Aenean at purus mauris. Praesent lobortis justo vel quam sodales
-					lacinia imperdiet at enim. Duis vitae mattis urna. Curabitur pulvinar ut neque et aliquam.
-					Mauris at ipsum vitae ligula semper maximus vel sit amet mauris. Ut ac luctus arcu. Nullam
-					aliquet in elit eu auctor.
-				</p>
-
-				<p className="mb-5">
-					Fusce volutpat malesuada mauris nec scelerisque. Donec sagittis enim ut sagittis molestie.
-					Nunc tortor lectus, vestibulum sit amet fermentum eu, tristique quis arcu. Pellentesque
-					sed iaculis quam. Integer eget tellus purus. Etiam gravida suscipit quam ac congue. Cras
-					sit amet elit velit. Aenean consectetur sed ante vel aliquam. Ut interdum consequat turpis
-					ut accumsan. Vestibulum in nunc venenatis arcu consectetur ornare sed et sem.
-				</p>
-			</section>
-		</>
+		<section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<h2 className="text-2xl font-extrabold text-gray-900">{meta.title}</h2>
+			<div className="mt-6 grid grid-cols-1 md:grid-cols-3 md:gap-x-6">
+				{posts.map((urun) => (
+					<Link
+						key={urun.id}
+						href={'/blog/' + urun.href}
+					>
+						<a className="relative w-full h-80 rounded-lg overflow-hidden sm:aspect-w-2 sm:aspect-h-1 sm:h-96 lg:aspect-w-1 lg:aspect-h-1 mb-6 cursor-pointer">
+							<Image src={urun.image} alt={urun.name} className="w-full h-full object-center object-cover" layout="fill" />
+							<div className="absolute px-5 py-4 w-full bg-white/90 bottom-0">
+								<h3 className="text-base font-semibold text-gray-900"><span className="relative inset-0" />{urun.name}</h3>
+							</div>
+						</a>
+					</Link>
+				))}
+			</div>
+		</section>
 	);
-};
+}
+
+Blogs.layoutProps = { meta };

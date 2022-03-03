@@ -13,7 +13,7 @@ export default function HeaderTop() {
 			>
 				<ul>
 					<li className="text-sm font-medium">
-						<Link href="/hakkimizda">
+						<Link href="/about">
 							<a className="flex items-center px-3 py-2 text-navy-500 hover:bg-slate-100">
 								<ChevronDoubleRightIcon className="mr-2 h-2 w-2" />
 								<span>Hakkımızda</span>
@@ -21,18 +21,10 @@ export default function HeaderTop() {
 						</Link>
 					</li>
 					<li className="text-sm font-medium">
-						<Link href="/referanslar">
+						<Link href="/references">
 							<a className="flex items-center px-3 py-2 text-navy-500 hover:bg-slate-100">
 								<ChevronDoubleRightIcon className="mr-2 h-2 w-2" />
 								<span>Referanslar</span>
-							</a>
-						</Link>
-					</li>
-					<li className="text-sm font-medium">
-						<Link href="/iletisim">
-							<a className="flex items-center px-3 py-2 text-navy-500 hover:bg-slate-100">
-								<ChevronDoubleRightIcon className="mr-2 h-2 w-2" />
-								<span>Bize Ulaşın</span>
 							</a>
 						</Link>
 					</li>
@@ -41,6 +33,14 @@ export default function HeaderTop() {
 							<a className="flex items-center px-3 py-2 text-navy-500 hover:bg-slate-100">
 								<ChevronDoubleRightIcon className="mr-2 h-2 w-2" />
 								<span>Blog</span>
+							</a>
+						</Link>
+					</li>
+					<li className="text-sm font-medium">
+						<Link href="/contact">
+							<a className="flex items-center px-3 py-2 text-navy-500 hover:bg-slate-100">
+								<ChevronDoubleRightIcon className="mr-2 h-2 w-2" />
+								<span>Bize Ulaşın</span>
 							</a>
 						</Link>
 					</li>

@@ -7,7 +7,6 @@ import '../css/style.css';
 import 'focus-visible';
 import { useState, useEffect, Fragment, Component } from 'react';
 import { AppProps } from 'next/app';
-import { SessionProvider } from 'next-auth/react';
 import { Footer } from '../components/Footer';
 import { Title } from '../components/Title';
 import Router from 'next/router';
@@ -23,7 +22,7 @@ if (typeof window !== 'undefined' && !('ResizeObserver' in window)) {
 
 const progress = new ProgressBar({
 	size: 2,
-	color: '#2867b2',
+	color: '#f97316',
 	className: 'bar-of-progress',
 	delay: 100,
 });
@@ -66,7 +65,7 @@ export default function App({ Component, pageProps, router }) {
 		)?.[0];
 
 	return (
-		<SessionProvider>
+		<>
 			<Title suffix="PopArt Metal">{meta.metaTitle || meta.title}</Title>
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -91,6 +90,6 @@ export default function App({ Component, pageProps, router }) {
 				</main>
 			</Layout>
 			<Footer />
-		</SessionProvider>
+		</>
 	);
 }
