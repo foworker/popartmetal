@@ -67,7 +67,7 @@ export default function Contact() {
                     Pencere uygulamaları, masa dekoru, dekoratif yastıklar ve örtüler ve çok daha fazlası dahil olmak üzere oturma odanızın görünümünü yepyeni bir düzeye çıkarmak için başka vurgular bulduğunuzdan emin olun!
                 </p>
                 <p className="mt-4 text-md">
-                    Evinizi nasıl dekore edeceğinize dair ilham arıyorsanız, herkesin alanına uyan popüler trendlerden bazılarını göz önünde bulundurun. Bahsetmemek gerekirse, PopArt'ta bu tarzlara uyan birçok aksan bulacağınızdan emin olabilirsiniz!
+                    Evinizi nasıl dekore edeceğinize dair ilham arıyorsanız, herkesin alanına uyan popüler trendlerden bazılarını göz önünde bulundurun. Bahsetmemek gerekirse, PopArtta bu tarzlara uyan birçok aksan bulacağınızdan emin olabilirsiniz!
                 </p>
                 <p className="mt-4 text-md">
                     Klasik rustik çiftlik evlerinden ilham alan bu dekor trendi, aynı anda hem nostaljik hem de taze olan eski moda bir görünüm ve his sunuyor. Çiftlik evi dekor öğeleri, gösterişli olmayan, ancak zamansız olacağından emin olan bir görünüm sağlayan nötr bir palete sahip olma eğilimindedir. Tipik olarak, bej, gri ve beyaz gibi renkler tabanı oluşturur ve yumuşak toprak tonları, herhangi bir odaya sıcaklık ve çekicilik sağlamak için biberlenir.
