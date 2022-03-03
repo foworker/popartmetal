@@ -40,7 +40,7 @@ export default function Contact() {
 							</div>
 						</div>
 						<div className="mt-5 md:mt-0 md:col-span-2">
-							<form action="#" method="POST">
+							<form name="contact" method="POST" data-netlify="true">
 								<div className="shadow overflow-hidden sm:rounded-md">
 									<div className="px-4 py-5 bg-white sm:p-6">
 										<div className="grid grid-cols-6 gap-6 mb-6">
@@ -57,9 +57,7 @@ export default function Contact() {
 												/>
 											</div>
 											<div className="col-span-3">
-												<label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-													Soyisim
-												</label>
+												<label htmlFor="last-name" className="block text-sm font-medium text-gray-700">Soyisim</label>
 												<input
 													type="text"
 													name="last-name"
@@ -71,9 +69,7 @@ export default function Contact() {
 										</div>
 										<div className="grid grid-cols-6 gap-6">
 											<div className="col-span-3">
-												<label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-													E-posta Adresi
-												</label>
+												<label htmlFor="email-address" className="block text-sm font-medium text-gray-700">E-posta Adresi</label>
 												<input
 													type="text"
 													name="email-address"

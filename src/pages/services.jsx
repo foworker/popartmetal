@@ -4,7 +4,7 @@ import image1 from '../../public/images/home-1.jpg';
 import image2 from '../../public/images/home-6.jpg';
 import image3 from '../../public/images/home-4.jpg';
 import image4 from '../../public/images/home-5.jpg';
-import creativeTeam from '../../public/images/creative-team.jpg';
+import banner2 from '../../public/images/creative-team.jpg';
 
 const features = [
 	{
@@ -43,15 +43,15 @@ const meta = {
 	title: 'Hizmetlerimiz',
 	description: 'PopArt Metal Aksesuar Sanayi Ltd.Şti. Hizmetlerimi',
 	date: '2022-02-24T15:22:00.000Z',
-}
-
+};
 export default function Services() {
 	return (
+		<>
 			<section className="bg-white">
 				<div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-10 px-4 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
 					<div>
 						<h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-						{meta.title}
+							{meta.title}
 						</h1>
 						<p className="mt-4 text-gray-600">
 							PopArt Metal iç mekan tasarım ve metal aksesuar üretim ve satışı hizmetlerinin dışında
@@ -123,10 +123,11 @@ export default function Services() {
 					<Image
 						src="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
 						alt="PopArt Metal"
-						src={creativeTeam}
+						src={banner2}
 					/>
 				</div>
 			</section>
+		</>
 	);
 }
 

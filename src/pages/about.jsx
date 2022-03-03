@@ -7,7 +7,7 @@ import image4 from '../../public/images/home-4.jpg';
 import image5 from '../../public/images/home-5.jpg';
 import image6 from '../../public/images/home-6.jpg';
 import image7 from '../../public/images/home-7.jpg';
-import creativeTeam from '../../public/images/creative-team.jpg';
+import aboutbanner from '../../public/images/creative-team.jpg';
 
 const meta = {
 	title: 'Hakkımızda',
@@ -27,7 +27,7 @@ export default function AboutUs() {
 							</h1>
 							<p className="mt-4 text-gray-600">
 								PopArt Metal 20 senedir sektöründe hizmet veren profesyonel bir ekip tarafından
-								2021'de kurulmuştur. Sıradışı tasarımlara imza atmaktan, çarpıcı tasarımlarını
+								2021de kurulmuştur. Sıradışı tasarımlara imza atmaktan, çarpıcı tasarımlarını
 								hayata geçirmekten ve yaşam alanlarınızı güzelleştirmekten haz alan bir ekiptir.
 							</p>
 							<p className="mt-4 text-gray-600">
@@ -162,7 +162,7 @@ export default function AboutUs() {
 					<Image
 						src="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
 						alt="PopArt Metal"
-						src={creativeTeam}
+						src={aboutbanner}
 					/>
 				</div>
 			</section>

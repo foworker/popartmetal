@@ -14,7 +14,7 @@ import image4 from '../../public/images/home-4.jpg';
 import image5 from '../../public/images/home-5.jpg';
 import image6 from '../../public/images/home-6.jpg';
 import image7 from '../../public/images/home-7.jpg';
-import creativeTeam from '../../public/images/creative-team.jpg';
+import banner1 from '../../public/images/creative-team.jpg';
 
 const features = [
 	{
@@ -234,7 +234,7 @@ export default function Home() {
 					<Image
 						src="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
 						alt="PopArt Metal"
-						src={creativeTeam}
+						src={banner1}
 					/>
 				</div>
 			</section>
