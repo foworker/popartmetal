@@ -4,7 +4,7 @@ import image1 from '../../public/images/home-1.jpg';
 import image2 from '../../public/images/home-6.jpg';
 import image3 from '../../public/images/home-4.jpg';
 import image4 from '../../public/images/home-5.jpg';
-import banner2 from '../../public/images/creative-team.jpg';
+import creativeBanner from '../../public/images/creative-team.jpg';
 
 const features = [
 	{
@@ -121,9 +121,9 @@ export default function Services() {
 				</div>
 				<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 					<Image
-						src="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+						className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
 						alt="PopArt Metal"
-						src={banner2}
+						src={creativeBanner}
 					/>
 				</div>
 			</section>

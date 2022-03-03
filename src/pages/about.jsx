@@ -7,7 +7,7 @@ import image4 from '../../public/images/home-4.jpg';
 import image5 from '../../public/images/home-5.jpg';
 import image6 from '../../public/images/home-6.jpg';
 import image7 from '../../public/images/home-7.jpg';
-import aboutbanner from '../../public/images/creative-team.jpg';
+import creativeBanner from '../../public/images/creative-team.jpg';
 
 const meta = {
 	title: 'Hakkımızda',
@@ -160,9 +160,9 @@ export default function AboutUs() {
 				</div>
 				<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 					<Image
-						src="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+						className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
 						alt="PopArt Metal"
-						src={aboutbanner}
+						src={creativeBanner}
 					/>
 				</div>
 			</section>
