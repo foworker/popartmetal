@@ -53,7 +53,7 @@ export function Footer() {
 						İletişim Bilgilerimiz
 					</h5>
 					<div>destek@popartmetal.com</div>
-					<div>+90 506 144 993</div>
+					<div>+90 506 144 9973</div>
 					<div>
 						Demirciler Sanayi Sitesi, B6 Blok No:68 <br /> İkitelli / İstanbul
 					</div>
